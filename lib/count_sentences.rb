@@ -16,8 +16,6 @@ class String
 
   def count_sentences
     sentence_count = self.delete(",").squeeze!
-    puts sentence_count
-    
-      sentence_count.delete(" ").split(/[". ", "! ", "? "]/).length
+    sentence_count.delete(" ").split(/[". ", "! ", "? "]/).length
   end
 end
